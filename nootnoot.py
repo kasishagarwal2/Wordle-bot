@@ -2,11 +2,6 @@ import random
 import requests
 
 '''
-response = []
-guesses = []
-words = requests.get('https://raw.githubusercontent.com/charlesreid1/five-letter-words/master/sgb-words.txt').text.strip().split('\n')
-guesses = words
-
 def checker(answer, guess):
     response = [0,0,0,0,0]
     answer = list(answer)
@@ -68,8 +63,6 @@ def generateGuess(n,res):
     else:
         return random.choice(guesses)
     
-print(checker("allay","arise"))
-
 sum = 0
 
 flag = True
