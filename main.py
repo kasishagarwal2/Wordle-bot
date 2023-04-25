@@ -62,8 +62,6 @@ def generateGuess(n,res):
         return "arise"
     else:
         return random.choice(guesses)
-    
-sum = 0
 
 flag = True
 
@@ -90,6 +88,7 @@ while(flag):
     guesses = updateGuesses(guesses, guess, res)
     n+=1
 
-
-print("Congratulations the correct answer is {} \nit took you {} tries".format(guess,n))
-sum +=n
+if guess == answer:
+    print("Congratulations the correct answer is {} and you guessed {} \nit took you {} tries".format(answer, guess, n))
+else:
+    print("lmao")
