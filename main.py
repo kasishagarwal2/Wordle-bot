@@ -1,7 +1,6 @@
 import random
 import requests
 
-'''
 def checker(answer, guess):
     response = [0,0,0,0,0]
     answer = list(answer)
@@ -19,7 +18,6 @@ def checker(answer, guess):
         
     return response
 
-'''
 def checker(answer, guessword):
         feedback = []
         for i,letter in enumerate(guessword):
